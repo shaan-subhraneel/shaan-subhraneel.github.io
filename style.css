@@ -1,0 +1,106 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+}
+.new{
+    background-color: aqua;
+    height: 50vh;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    width:100%;
+    height: 80px;
+}
+nav .head{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 80px;
+    margin-left: 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-size: 15px;
+}
+a:hover{
+    color: black;
+}
+.main-text .profile-pic{
+    position: absolute;
+    top:100px;
+    right: 0px;
+    border-radius:70%;
+    width:15%;
+    margin-right: 100px;
+}
+.main-text .text{
+    position: absolute;
+    top: 170px;
+    left: 0px;
+    width: 70%;
+    margin-left: 100px;
+}
+.myprojects{
+    padding-top: 30px;
+    margin: auto;
+    text-align: center;
+}
+.row{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.row .project{
+    flex-basis: 31%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.row .project h4{
+    color: rgba(102, 91, 91, 0.699);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:500;
+}
+.row .project p{
+    text-align: justify;
+}
+@media (max-width:858px) {
+    nav ul{
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 10px;
+        margin: 0 5px;
+        font-size: 15px;
+    }
+    .main-text .profile-pic{
+        position: none;
+        margin-right: 250px;
+        border-radius:70%;
+        width:25%;
+    }
+    .main-text .text{
+        position: none;
+        margin-top: 70px;
+        margin-left: 50px;
+        width: 80%;
+    }
+    .row{
+        display: block;
+    }
+}
